@@ -1,0 +1,381 @@
+@font-face{
+
+    font-family: 'BallparkWeiner';
+
+    src: url('polices/ballpark.eot');
+
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+
+         url('polices/ballpark.woff') format('woff'),
+
+         url('polices/ballpark.ttf') format('truetype'),
+
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+mark
+{
+    background-color: initial;
+}
+
+#logo img
+{
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*align-items: baseline;*/
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 0.5cm;
+    bottom: -0.5cm;
+    /*margin: 30px 0px 0px 250px;*/
+}
+
+
+#main_title h1
+{
+    position: relative;
+    font-family: 'LearningCurveProRegular', serif;
+    font-size: 3em;
+    font-weight: normal;
+    margin: -90px 0px 120px 445px;
+    justify-content: space-between;
+    bottom: 0.7cm;
+}
+
+#slogan
+{
+    position: relative;
+	font-family: 'BallparkWeiner', serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: -120px 190px 150px 550px;
+    justify-content: space-between;
+    bottom: 0.5cm;
+}
+
+
+body
+{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-image: url('../Images/websitePic/Imagination/sky-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#sous_body
+{
+    width: 800px;
+    margin: auto;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: white;
+    /*color: white;*/
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 10px 10px 10px #1c1a19;
+}
+
+
+header
+{
+	width: 900px;
+	margin: auto;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+	margin-bottom: 50px
+}
+
+
+#main_image img
+{
+    height: 450px;
+    width: 900px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 10px 10px 10px #1c1a19;
+    margin: -80px 0px 0px 0px;
+}
+
+#banniere_citation
+{
+    position: relative;
+    bottom: 45px;
+    border-radius: 0px 100px 5px 5px;
+    width: 70.5%;
+    height: 33px;
+    padding-top: 10px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 0.9em;
+    margin: 0px 0px 0px 0px;
+}
+
+#principal_nav
+{
+    position: fixed;
+    top: 225px;
+    left: 0px;
+    z-index: 500;
+}
+
+#principal_nav a 
+{
+    display: block;
+    padding:.75em;
+    text-decoration: none;
+    /*border-radius: 20px 20px 20px 20px;*/
+    width: 150.5%;
+    height: 25px;
+    padding-top: 10px;
+    padding-left: 13px;
+    background-color: rgba(0,0,0,1);
+    color: white;
+    font-size: 0.9em;
+    margin-top: 1px;
+}
+
+
+
+
+#principal_nav a:focus,
+#principal_nav a:hover
+ {
+    color: blue;
+    background: #ffc;
+    color: rgb(0,155,255);
+    border-bottom: 3px solid rgb(0,155,255);
+    transition:all 1s ease;
+}
+
+.nav-item
+{
+    float: none; /* Pour que les liens s’affichent horizontalement */
+    position: relative; /* Crée un contexte de positionnement pour les sous-listes */
+}
+
+.sub-nav
+{
+    display: none; /* Masque la sous-liste */
+    float: left;
+    position: absolute; /* Evite que la dimension du conteneur ne change quand la sous-liste est affichée */
+    left: 223px; /* FIX IE7 : pour que le sous-menu s’aligne avec son conteneur */
+    top: 0em; /* FIX IE7 : pour que le sous-menu s’aligne avec son conteneur, on le positionne explicitement en bas du conteneur */
+    white-space: nowrap; /* Pour que le texte ne revienne pas à la ligne */
+    background: none; /* FIX IE7 : évite que la sous-liste ne disparaisse au moment où le curseur arrive au-dessus */
+    margin-top: -2px; /* Pour que le sous-menu recouvre son parent, facilitant le passage de la souris de l’un à l’autre */
+
+
+}
+
+.nav-item:hover .sub-nav 
+{
+    display: block; /* Affiche cette sous-liste au survol de son conteneur */
+    
+}
+
+h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.3em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+h2
+{
+    font-family: 'Dayrom', serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+aside
+{
+    flex: 1.2;
+    position: relative;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+#me_aside
+{
+    
+    width: 200px;
+    height: 450px;
+    font-size: 0.9em;
+    margin: inherit;
+    left: 540px;
+    bottom: 575px;
+}
+
+#photo_emblem img
+{
+    position: relative;
+    right: 20px;
+    width: 200px;
+    height: 150px;
+    border: 1px solid #181818;
+    border-radius: 5px;
+    margin: 10px 0px 10px 20px;
+    box-shadow: 0px 4px 4px #1c1a19;
+}
+
+#facebook_emblem img
+{
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+#gmail_emblem img
+{
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+aside img
+{
+    margin-right: 5px;
+}
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+    width: 500px;
+    margin-left: 140px;
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 20px;
+    margin-left: 10px;
+    flex: 3;
+}
+
+#presentations h1
+{
+    margin: 50px 0px 20px 10px;
+}
+
+
+
+article p
+{
+    font-size: 1em;
+}
+
+footer
+{
+    margin-top: 100px; 
+	position: relative;
+	/*background-image: url(../Images/websitePic/Imagination/index-footer.jpg);*/
+	height: 200px;
+    display: flex;
+    /*background-color: rgba(0,50,50,0.8);*/
+    padding-top: 25px;
+    background-image: linear-gradient(white,black);
+}
+
+
+footer a
+{
+    color: black;
+}
+
+
+footer a:visited
+{
+    color: rgba(0,100,255,1);
+}
+
+
+footer p, footer ul
+{
+    font-size: 1em;
+}
+
+footer h1
+{
+    color:rgba(0,100,255,1);
+    font-size: 2em;
+}
+
+#others
+{
+	position: relative;
+	left: 600px;
+}
+
+#follow
+{
+	position: relative;
+	left: 375px;	
+}
+
+#books
+{
+	position: relative;
+	left: 200px;
+}
+
+
+#account
+{
+    position: relative;
+    bottom: 19.9cm;
+    left: 20.3cm;
+    border-radius: 0px 0px 100px 5px;
+    width: 37.5%;
+    padding-top: 21px;
+    padding-left: 7px;
+    padding-bottom: 29px;
+    background-color: white;
+    box-shadow: 0px 19px 10px #1c1a19;
+
+}
+
+form
+{
+
+}
+
+
+form input, form select
+{
+    margin-left: 1%;
+    margin-bottom: 10px;
+    width: 50%;
+    border: black 1px solid;
+}
+
+#login
+{
+    position: relative;
+    right: 3cm;
+    top: 0.8cm;
+    width: 15%;
+}
+
+#fileContent
+{
+    position: relative;
+    top: 2cm;
+    color: red;
+}

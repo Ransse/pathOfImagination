@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="Style/normalize.css" />
+        <link rel="stylesheet" href="Style/style.css" />
+        <link rel="stylesheet" href="Style/styleFormula.css" />
+        <title>Path of Imagination</title>
+        <link rel="icon" type="image/png" href="Images/websitePic/Logo/pi_logo3.png" />
+    </head>
+
+    <body>
+
+
+        <div id="logo">
+            <a href="index1.html"><img alt="Logo" src="Images/websitePic/Logo/pi_logo3.png"/></a>
+        </div>
+
+        <div id="main_title">
+            <h1><strong>PATH OF IMAGINATION</strong></h1>
+            <div id="slogan">
+                <h2><em>You still have the ability...</em></h2>
+            </div>
+        </div>
+
+        
+
+
+
+        <div id="sous_body">
+
+            <nav id="principal_nav">
+                <ul class="nav">
+                    <li class="nav-item"><a href="index.html">Home Page</a></li>
+                    <li class="nav-item">
+                        <a href="index2.html">Harry Potter</a>
+                        <ul class="nav sub-nav">
+                            <li class="sub-nav-item"><a href="index2.html#HP1">The Philosopher's Stone</a></li>
+                            <li class="sub-nav-item"><a href="index2.html#HP2">The Chamber of Secrets</a></li>
+                            <li class="sub-nav-item"><a href="index2.html#HP3">The Prisoner of Azkaban</a></li>
+                            <li class="sub-nav-item"><a href="index2.html#HP4">The Goblet of Fire</a></li>
+                            <li class="sub-nav-item"><a href="index2.html#HP5">The Order of the Phoenix</a></li>
+                            <li class="sub-nav-item"><a href="index2.html#HP6">The Half-Blood Prince</a></li>
+                            <li class="sub-nav-item"><a href="index2.html#HP7">The Deathly Hallows</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index3.html">Inheritance cycle</a>
+                        <ul class="nav sub-nav">
+                            <li class="sub-nav-item"><a href="index3.html#IC1">Eragon</a></li>
+                            <li class="sub-nav-item"><a href="index3.html#IC2">Eldest</a></li>
+                            <li class="sub-nav-item"><a href="index3.html#IC3">Brisingr</a></li>
+                            <li class="sub-nav-item"><a href="index3.html#IC4">Inheritance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index4.html">Formulaire</a>
+                    </li>
+                </ul>
+            </nav>
+                
+
+            <form id="form" method="post" action="htbin/register.py">
+              
+			  <h1 id="h1Form">FORMULAIRE</h1>
+			  
+			  <fieldset>
+			        
+			        <p id="formInfos">The fields with the * mark are <em class="obligatoire">required</em>.</p>
+
+
+			        <h2>Personal Information</h2>
+			        <div class="p">
+			            <label for="firstname">First Name<em class="obligatoire">* </em>: </label>
+			            <input type="text" name="firstname" id="firstname"/>
+						<div id="errorFirstname" class="error" style="display:none">The First name input value is incorrect</div>
+
+			        </div>
+			        <div class="p">
+			            <label for="lastname">Last Name<em class="obligatoire">* </em>: </label>
+			            <input type="text" name="lastname" id="lastname"/>
+						<div id="errorLastname" class="error" style="display:none">The Last name input value is incorrect</div>
+			        </div>
+			        <div class="p">
+			            <label for="sexe">Gender : </label>
+			            <select id="sexe" name="country">
+			            	<option value="homme">Male</option>
+			                <option value="femme">Female</option>
+			            </select>
+			        </div>
+					
+			        <div class="p">
+			            <label for="birthdate">Birthdate<em class="obligatoire">* </em>: </label>
+			            <input type="text" name="birthdate" id="birthdate" placeholder="jj/mm/aaaa"/>
+						<div id="errorBirthdate" class="error" style="display:none">The Birth input value is incorrect</div>
+			        </div>
+			        <div class="p">
+			            <label for="address">Adress : </label>
+			            <input type="text" id="address" name="address"/>
+			        </div>
+			        
+			        <div class="p">
+			            <label for="city">City : </label>
+			            <input type="text" id="city" name="city"/>
+			        </div>
+			        <div class="p">
+			            <label for="country">Pays : </label>
+			            <select id="country" name="country">
+			            	<option value="ne">Niger</option>
+			                <option value="ca">Canada</option>
+			                <option value="us">États-Unis</option>
+			                <option value="be">Belgique</option>
+			                <option value="fr">France</option>
+			                <option value="">Other</option>
+			            </select>
+			        </div>
+			    </fieldset>
+			    
+			    <fieldset>
+			        <h2>Account</h2>
+			        
+			        <div class="p">
+			            <label for="username">User Name<em class="obligatoire" >* </em>: </label>
+			            <input type="text" name="username" id="username"/>
+						<div id="errorUsername" class="error"  style="display:none">The User name input value is incorrect</div>
+			        </div>
+			        
+			        <div class="p">
+			            <label for="userpwd">Password<em class="obligatoire">* </em>: </label>
+			            <input type="password" name="userpwd" id="userpwd"/>
+						<div id="errorPassword" class="error" style="display:none">The Password input value is incorrect</div>
+			        </div>
+			        
+			        <div class="p">
+			            <label for="useremail">User e-mail<em class="obligatoire">* </em>: </label>
+			            <input type="text" name="useremail" id="useremail"/>
+						<div id="errorUsermail" class="error" style="display:none">The User mail input value is incorrect</div>
+			        </div>
+			        
+			    </fieldset>
+			    
+			    <div class="p">
+			        <input type="submit" name="submit" id="submit" disabled="disabled"/>
+			    </div>
+            </form>
+	
+
+
+            
+        </div>
+
+
+
+        <footer>
+
+
+                <div id="books">
+                    <h1>Bookstores online</h1>
+                    <ul>
+                        <li><a class="Bookstores-online" href="http://www.gibertjoseph.com/">Gilber Joseph</a></li>
+                        <li><a class="Bookstores-online" href="http://www.fnac.com/livre.asp">Fnac</a></li>
+                        <li><a class="Bookstores-online" href="http://www.amazon.fr/s/?ie=UTF8&keywords=boutique+livre+en+ligne&tag=googhydr0a8-21&index=aps&hvadid=52062435042&hvpos=1t1&hvexid=&hvnetw=g&hvrand=3209051515765685179&hvpone=&hvptwo=&hvqmt=b&hvdev=c&ref=pd_sl_1xin57syz0_b">Amazon</a></li>
+                    </ul>
+                </div>
+                
+                <div id="follow">
+                    <h1>Follow us</h1>
+					<ul>
+						<li><a href="https://twitter.com/?lang=fr">Twitter</a></li>
+						<li><a href="https://fr-fr.facebook.com/">Facebook</a></li>
+					</ul>
+				</div>
+
+                <div id="others">
+                    <h1>You will also like:</h1>
+                        <ul>
+                            <li><a href="https://www.goodreads.com">Goodreads</a></li>
+                            <li><a href="http://flavorwire.com">Flavorite</a></li>
+                            <li><a href="http://fantasy-faction.com">Fantasy-faction</a></li>
+                            <li><a href="http://bestfantasybooks.com">Best fantasy books</a></li>
+                            <li><a href="http://www.fantasybookcafe.com">Fantasy cafe</a></li>
+                        </ul>
+                </div>
+            </footer>
+
+	<script type="text/javascript" src="javaScript/formulaire.js"></script>
+
+    </body>
+</html>

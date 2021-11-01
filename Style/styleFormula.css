@@ -1,0 +1,153 @@
+
+#sous_body
+{
+	background-color: initial;
+}
+
+
+.obligatoire
+{
+	color: red;
+}
+
+
+
+form
+{
+	width: 70%;
+	position: relative;
+	left: 3.5cm;
+	padding-bottom: 1cm;
+}
+
+form p
+{
+	margin: 9px 0;
+}
+
+.p
+{
+	margin: 9px 0;
+}
+
+form fieldset
+{
+	margin-bottom: 50px;
+	border: rgb(255,255,255) 1px solid;
+	border-width: 1cm;
+}
+
+form fieldset:hover
+{
+	background-color: rgba(50,150,255,0.5);
+}
+
+form fieldset h2
+{
+	text-align: center;
+	padding: 0 10px;
+	border-left: blue 1px solid;
+	border-right: blue 1px solid;
+	font-size: 1.2em;
+	color: rgba(200,250,255,1);
+	font-size: 0.7cm;
+}
+
+
+
+form label
+{
+	background-color: gray;
+	display: block;
+	width: 39%;
+	float: left;
+	padding-right: 1%;
+	text-align: right;
+	letter-spacing: 2px;
+}
+
+form label:hover
+{
+	font-weight: bold;
+}
+
+#f,#m
+{
+	background : none;
+	display: initial;
+	text-align: initial;
+	float: initial;
+}
+
+
+
+
+form input, form select
+{
+	margin-left: 1%;
+	width: 58%;
+	border: #CCC 1px solid;
+}
+
+
+
+form input:hover, form select:hover, form input:focus, form select:focus
+{
+	border: black 1.5px solid;
+	background-color: rgba(255,255,255,0.8);
+}
+
+
+#submit
+{
+	position: relative;
+	left: 6cm;
+	width: 18%;
+	background-color: initial;
+	border-width: 2px;
+	border-radius: 15px;
+}
+
+#submit:focus, #submit:hover
+{
+	border: black 1px solid;
+	background-color: rgba(22,183,253,0.8);
+	border-width: 2px;
+	border-radius: 15px;
+}
+
+#sous_body
+{
+	background-color: rgba(0,0,0,0.7);
+	padding-top: 2cm;
+}
+
+#formInfos
+{
+	position: relative;
+	bottom: 3cm;
+	left: 2cm;
+	color: white;
+}
+
+#h1Form
+{
+	position: relative;
+	bottom: 4cm;
+	left: 3cm;
+	font-family: Arial;
+	color: white;
+
+}
+.error
+{
+	position: relative;
+	left: 5.5cm;
+	color: red;
+	display: none;
+}
+
+#errorFirstnae
+{
+
+}
